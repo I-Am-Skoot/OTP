@@ -32,7 +32,7 @@ Decode () {
 
   # Build Grids
   declare -A codetable
-   for (( w=0; w<39; w++)); do
+   for (( w=0; w<40; w++)); do
      codetable[${Wc[$w]}]=${W:$w:1}
      codetable[${Xc[$w]}]=${X:$w:1}
      codetable[${Yc[$w]}]=${Y:$w:1}

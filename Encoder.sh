@@ -62,7 +62,7 @@ Encode () {
     # Get Grid position for Character
     charplaceh=${codes%%$char*}
     charplaceholder=${#charplaceh}
-    codevalue=${codespot[$charplaceholder]}a
+    codevalue=${codespot[$charplaceholder]}
     # build output message
     output=$output$codevalue
   done  

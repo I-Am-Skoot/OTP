@@ -36,6 +36,7 @@ ZYXZYZWYWZXYZWYXZXWYXZYWY| O4J8K5 |ZXWYWXYWXZYXWXZXWXZYWYZYX
 | 8 ||   | J | X | Z | I |        | 8 || 3 | L | - | 6 | G |
 |===||===|===|===|===|===|        |===||===|===|===|===|===|
 ```
+#**DO NOT USE THIS EXAMPLE EXCEPT FOR TESTING**
 
 It will also send a code the the stderr to use in the Encoder, Decoder, and validation tools.   these are extra tools not needed for this process.
 

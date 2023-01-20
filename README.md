@@ -51,16 +51,19 @@ Using the Encoding sequence, you will identify which table will be used for each
 In this example, the encoding sequence is ZYXZYZWYWZXYZWYXZXWYXZYWYZXWYWXYWXZYXWXZXWXZYWYZYX  (50 Chars Long)  if your message is longer than 50 chars, you will need to repeat.
 
 A test message would look like:
+```
 Plaintext: This is a test Message.
 Encoded: N7J8P1N5S7A2N5E8S1G1N7R3A8N7G1S2F4A8N5I3T8K4E5
+```
 
 To allow your partner to be able to decode it, Add the Page ID to the start of the string you send them.
 Example: O4J8K5N7J8P1N5S7A2N5E8S1G1N7R3A8N7G1S2F4A8N5I3T8K4E5
 
 To Decode, you furst match the Page ID, then for each code, Find the character in the proper table
+```
 N7 J8 P1 N5 S7 A2 N5 E8 S1 G1 N7 R3 A8 N7 G1 S2 F4 A8 N5 I3 T8 K4 E5
 T  H  I  S     I  S     A     T  E  S  T     M  E  S  S  A  G  E  .
-
+```
 Notice that having 4 tables makes it les likely that the same charater will be detected as a repeating character.
 
 

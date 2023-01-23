@@ -38,7 +38,11 @@ Encode () {
     char=${char^^}
     codes=""
     codeplace=""
-    codeplace=$(($i % 50))
+    codeplace=$i
+    while [ $codeplace -gt 49 ]
+    do
+	    codeplace=$codeplace - 50
+    done
     codebook=${SEQ:$codeplace:1}
     # Identify table to use in sequence
     case $codebook in

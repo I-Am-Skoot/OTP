@@ -11,29 +11,29 @@ To use:
 |≡≡≡||===|===|===|===|===|        |≡≡≡||===|===|===|===|===|
 | W || A | B | C | D | E |        | X || F | G | H | I | J |
 |≡≡≡||===|===|===|===|===|        |≡≡≡||===|===|===|===|===|
-| 1 || U | - | N | P | C |        | 1 || B |   | G | O | L |
-| 2 || I | 0 | 4 | Q | H |        | 2 || Q | Q | W | K | M |
-| 3 || , | W | Z | M | 1 |        | 3 || D | Z | R | A | S |
-| 4 || 5 | 2 | D | J | O |        | 4 || E | 4 | , | 7 | I |
-| 5 || 6 | 7 | X | T | . |        | 5 || 2 | T | 9 | 6 | 8 |
-| 6 || B | Y | A | 3 | 8 |        | 6 || U | . | - | 3 | N |
-| 7 || V | K | E | F | L |        | 7 || J | 1 | F | X | P |
-| 8 || S | G | 9 | R |   |        | 8 || 0 | V | 5 | C | H |
+| 1 || F | X | Z | 1 | T |        | 1 || 8 |   | D | Y | 0 |
+| 2 || O | A | J | L | G |        | 2 || 4 | 4 | K | 6 | Q |
+| 3 ||   | H | P | C | U |        | 3 || B | P | 7 | U | M |
+| 4 || B | 3 | - | 6 | 7 |        | 4 || F | O | T | V | S |
+| 5 || V | E | N | 4 | 8 |        | 5 || 5 | N | , | W | G |
+| 6 || , | S | I | . | D |        | 6 || H | - | I | 9 | J |
+| 7 || Q | Y | 5 | R | 9 |        | 7 || A | . | E | Z | R |
+| 8 || 2 | W | K | 0 | M |        | 8 || C | X | 2 | 1 | L |
 |===||===|===|===|===|===|        |===||===|===|===|===|===|
                          |========|
-ZYXZYZWYWZXYZWYXZXWYXZYWY| O4J8K5 |ZXWYWXYWXZYXWXZXWXZYWYZYX
+YZWXWZWZYZXZWXZXYWZWXZYWX| C715E3 |ZWYWYXYWYXZYZXZXWXYXWZXYZ
                          |========|
 |≡≡≡||===|===|===|===|===|        |≡≡≡||===|===|===|===|===|
 | Y || K | L | M | N | O |        | Z || P | Q | R | S | T |
 |≡≡≡||===|===|===|===|===|        |≡≡≡||===|===|===|===|===|
-| 1 || 0 | R | Q | P | L |        | 1 || I | , | . | A | H |
-| 2 || 9 | , | 7 | N | 4 |        | 2 || Q | 5 | X | M | 7 |
-| 3 || M | U | 3 | Y | W |        | 3 || Z | B | E | C | 1 |
-| 4 || E | K | - | 2 | 1 |        | 4 || V | K | U | F | 2 |
-| 5 || G | 6 | F | S | O |        | 5 || O | 4 | W | J | 9 |
-| 6 || V | D | 8 | H | B |        | 6 || N | P | 0 | 8 | Y |
-| 7 || C | 5 | A | T | . |        | 7 || S | R | T |   | D |
-| 8 ||   | J | X | Z | I |        | 8 || 3 | L | - | 6 | G |
+| 1 || - | 1 | D | O | 2 |        | 1 || U |   | Z | Y | G |
+| 2 || E | 7 | F | K | H |        | 2 || V | , | E | Q | H |
+| 3 || A | 8 | L | . | B |        | 3 || A | P | B | T | L |
+| 4 || Y | 0 | M | Z | X |        | 4 || . | 7 | D | 6 | W |
+| 5 || 4 | U | 9 | V | G |        | 5 || S | O | R | 5 | 0 |
+| 6 || , | 5 | C | P | N |        | 6 || K | 3 | I | 4 | M |
+| 7 || 3 |   | S | Q | W |        | 7 || J | - | 2 | X | 1 |
+| 8 || T | 6 | I | R | J |        | 8 || F | 8 | 9 | N | C |
 |===||===|===|===|===|===|        |===||===|===|===|===|===|
 ```
 #**DO NOT USE THIS EXAMPLE EXCEPT FOR TESTING**
@@ -49,20 +49,20 @@ To Use, print two copies of the table.    Give one to your partner.
 
 Using the Encoding sequence, you will identify which table will be used for each character in your message.
 
-In this example, the encoding sequence is ZYXZYZWYWZXYZWYXZXWYXZYWYZXWYWXYWXZYXWXZXWXZYWYZYX  (50 Chars Long)  if your message is longer than 50 chars, you will need to repeat.
+In this example, the encoding sequence is YZWXWZWZYZXZWXZXYWZWXZYWXZWYWYXYWYXZYZXZXWXYXWZXYZ  (50 Chars Long)  if your message is longer than 50 chars, you will need to repeat (This is not as secure, we advise to keep messages under 50 chacters long).
 
 A test message would look like:
 ```
 Plaintext: This is a test Message.
-Encoded: N7J8P1N5S7A2N5E8S1G1N7R3A8N7G1S2F4A8N5I3T8K4E5
+Encoded: K8T2C6J4A3R6B6Q1K3Q1H4R2B6H4Q1J3K2B6P5B2J5R2N3
 ```
 
 To allow your partner to be able to decode it, Add the Page ID to the start of the string you send them.
-Example: O4J8K5N7J8P1N5S7A2N5E8S1G1N7R3A8N7G1S2F4A8N5I3T8K4E5
+Example: C715E3K8T2C6J4A3R6B6Q1K3Q1H4R2B6H4Q1J3K2B6P5B2J5R2N3
 
 To Decode, you furst match the Page ID, then for each code, Find the character in the proper table
 ```
-N7 J8 P1 N5 S7 A2 N5 E8 S1 G1 N7 R3 A8 N7 G1 S2 F4 A8 N5 I3 T8 K4 E5
+K8 T2 C6 J4 A3 R6 B6 Q1 K3 Q1 H4 R2 B6 H4 Q1 J3 K2 B6 P5 B2 J5 R2 N3
 T  H  I  S     I  S     A     T  E  S  T     M  E  S  S  A  G  E  .
 ```
 Notice that having 4 tables makes it les likely that the same charater will be detected as a repeating character.

@@ -18,14 +18,18 @@ function GetSeq(){
 SEQA=$(GetSeq)
 SEQB=$(GetSeq)
 
-# Generate Random Codepage
-Page=`echo {A..T}  | tr '   ' "\n" | shuf -n 1| xargs | tr -d ' '``echo {1..8}  | tr '   ' "\n" | shuf -n 1| xargs | tr -d ' '``echo {A..T}  | tr '   ' "\n" | shuf -n 1| xargs | tr -d ' '``echo {1..8}  | tr '   ' "\n" | shuf -n 1| xargs | tr -d ' '``echo {A..T}  | tr '   ' "\n" | shuf -n 1| xargs | tr -d ' '``echo {1..8}  | tr '   ' "\n" | shuf -n 1| xargs | tr -d ' '`
-
 # Get Random Character list x4
 CodeA=`sort --random-sort chars.list | tr -d '\n'`
 CodeB=`sort --random-sort chars.list | tr -d '\n'`
 CodeC=`sort --random-sort chars.list | tr -d '\n'`
 CodeD=`sort --random-sort chars.list | tr -d '\n'`
+
+# Create Validation string for use in Encoder and Decoder
+key="$SEQA$SEQB$CodeA$CodeB$CodeC$CodeD"
+keyhash=`sha1sum <<< $key`
+keyhash=${keyhash^^}
+keyhash=${keyhash:0:40}
+Page="${keyhash:0:1}${keyhash:4:1}${keyhash:8:1}${keyhash:12:1}${keyhash:6:1}${keyhash:15:1}"
 
 #  Create and format Code Page
 CodeBook="|≡≡≡||===|===|===|===|===|        |≡≡≡||===|===|===|===|===|"$'\n'
@@ -59,9 +63,5 @@ CodeBook+="|===||===|===|===|===|===|        |===||===|===|===|===|===|"$'\n'
 # Display Codepage
 echo "$CodeBook"$'\n'$'\n'
 
-# Create Validation string for use in Encoder and Decoder
-key="$Page$SEQA$SEQB$CodeA$CodeB$CodeC$CodeD"
-keyhash=`bc <<<ibase=16\;$(sha1sum <<< "$key"|tr a-z A-Z)0`
-
 # Send Code string to stderr
-echo "$key$keyhash" >&2
+echo "$Page$key$keyhash" >&2

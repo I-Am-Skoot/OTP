@@ -55,5 +55,3 @@ echo "keyhash=$keyhash"
 echo "Errors=$errors"
 echo "CodeTable = 
 $CodeTable"
-
-
